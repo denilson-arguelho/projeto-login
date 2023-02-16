@@ -1,6 +1,63 @@
+@charset "UTF-8";
+
 /*
 Paleta de cores
   cor1: #D62828
   cor2: #F77F00
   cor3: #FCBF49
 */
+:root{
+  --cor1:#D62828;
+  --cor2:#F77F00;
+  --cor3:#FCBF49;
+}
+*{
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  background-color: var(--cor2);
+  width: 100vw;
+  height: 100vh;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#login{
+  background-color:#ffffff;
+  width: 250px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
+}
+
+section#login > #img{
+  background:  url(../img/goku.png) no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  height: 200px;
+  display: block ;
+}
+
+section#login > div#form{
+  padding: 10px;
+  display: block;
+}
+
+div#form > h1, p{
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
