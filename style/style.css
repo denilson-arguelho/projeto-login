@@ -6,25 +6,27 @@ Paleta de cores
   cor2: #F77F00
   cor3: #FCBF49
 */
-:root{
-  --cor1:#D62828;
-  --cor2:#F77F00;
-  --cor3:#FCBF49;
+:root {
+  --cor1: #D62828;
+  --cor2: #F77F00;
+  --cor3: #FCBF49;
 }
-*{
-  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
   background-color: var(--cor2);
   width: 100vw;
   height: 100vh;
 }
 
-main{
+main {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -32,10 +34,10 @@ main{
   align-items: center;
 }
 
-section#login{
-  background-color:#ffffff;
+section#login {
+  background-color: #ffffff;
   width: 250px;
-  height: 500px;
+  height: 520px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
@@ -43,21 +45,93 @@ section#login{
   transition-timing-function: ease;
 }
 
-section#login > #img{
-  background:  url(../img/goku.png) no-repeat;
+section#login>#img {
+  background: url(../img/goku.png) no-repeat;
   background-size: cover;
   background-position: left bottom;
   height: 200px;
-  display: block ;
+  display: block;
 }
 
-section#login > div#form{
+section#login>div#form {
   padding: 10px;
   display: block;
 }
 
-div#form > h1, p{
+div#form>h1,
+p {
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
 }
 
+form>div.campo {
+  background-color: var(--cor2);
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 0px;
+
+}
+
+div.campo>label {
+  display: none;
+}
+
+div.campo>i {
+  font-size: 2em;
+  padding: 5px;
+  width: 40px;
+}
+
+div.campo>input {
+
+
+  font-size: 1em;
+  border-radius: 8px;
+  width: calc(100% - 45px);
+  height: 100%;
+  padding: 4px;
+  transform: translateY(-6px);
+}
+
+form>input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor3);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+  background-color: #f79f41;
+}
+
+form>a.btn {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+
+  color: #dd770b;
+  ;
+  border: 1px solid #df9a51;
+  border-radius: 5px;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+form>a.btn:hover {
+  background-color: #f79f41;
+}
+
+form a.btn>i {
+  font-size: 0.8em;
+}

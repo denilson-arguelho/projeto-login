@@ -51,4 +51,10 @@ Grandes Telas: acima de 1200px
     margin-bottom: 10px;
     font-size: 2em;
   }
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
 }
